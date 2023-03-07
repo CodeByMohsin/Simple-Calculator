@@ -4,7 +4,9 @@
 
 This is a simple calculator web application built using HTML, CSS, and JavaScript. It allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division.
 
+## Getting Started 
 
+To use the calculator, simply open the index.html file in a web browser. You can also try it out [here](https://0xmohsinpathan.github.io/Simple-Calculator/)
 
 
 
