@@ -1,69 +1,70 @@
-* {
-    box-sizing: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
-body {
-    padding: 0;
+*{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-.calc {
-    width: 400px;     
-    background-color: black;
-    color: white;    
-}
-
-.screen {
-    font-size: 40px;
-    font-family: 'Courier New', Courier, monospace;
-    text-align: right;
-    padding: 20px 5px;
-}
-
-.calc-button {
-    background-color: #d8d9db;
-    color: black;
-    height: 100px;
+body{
     width: 100%;
-    border:0.5px;
-    border-radius: 0%;
-    font-size: 40px;
-    cursor: pointer;
-}
-
-.calc-button:last-child {
-    background-color: #df974d;
-    color: white;
-}
-
-.calc-button:last-child:hover {
-    background-color: #c9a440;
-}
-
-.calc-button:last-child:active {
-    background-color: #a35b13;
-}
-
-.calc-button:hover {
-    background-color: #ebebeb;
-}
-
-.calc-button:active {
-    background-color: #bbbcbe;
-}
-
-.double {
-    width: 212%;   
-}
-
-.triple {
-    width: 318.5%;
-}
-
-.calc-row {
+    height: 100vh;
     display: flex;
-    align-content: stretch;
-    justify-content: space-between;
-    margin-bottom: 0.5%;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-90deg, #ef4fe2, #0981c2 ) ;
 }
 
+.calculator{
+    border: 1px solid #405652;
+    padding: 20px; 
+    border-radius: 16px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgba(96, 5, 8, 0.5);
+}
+
+input{
+    width: 320px;
+    border: none;
+    padding: 24px;
+    margin: 10px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgba(84, 84, 84, 0.1);
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+input::placeholder{
+    color: #ffffff;
+}
+
+button{
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    box-shadow: -8px -8px 15px rgba(81, 5, 106, 0.3);
+    cursor: pointer;
+    color: #405652;
+}
+
+.equalBtn{
+    background-color: #fb7c14;
+}
+
+.operator{
+    color: #6dee0a;
+}
+
+.ac{
+    color: #fb7c14;
+}
+
+.del{
+    color: #2f3937;
+}
